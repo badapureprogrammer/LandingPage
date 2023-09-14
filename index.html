@@ -7,15 +7,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <!-- Here Link Be Vietnam Pro Font-Family -->
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Here Link Be Vietnam Pro Font-Family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Here Link CSS File -->
     <link rel="stylesheet" href="style.css" />
     <!-- TITLE OF THE PAGE -->
     <title>Landing Page</title>
   </head>
   <body>
-    <h1>Hello Arun</h1>
+    <header class="primary-header">
+      <div class="conntainer">
+        <a href="#"><img src="images/logo.svg" alt="Manage-Logo" /></a>
+        <nav aria-label="primary" class="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Cummunity</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="button">Get Started</button>
+      </div>
+    </header>
+    <!-- Here End of Header Section -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h1 class="fs-primary-heading fw-bold">
+                Bring everyone together to build better products.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore eos, vel ex quo nobis sed quas! Tenetur dignissimos
+                quis veritatis est saepe, nulla porro provident, omnis voluptas
+                sed dolorem iste aliquid accusamus id quibusdam atque cumque
+                praesentium debitis voluptatem esse tempore molestiae sunt!
+                Soluta, nostrum consequuntur expedita eius illo a.
+              </p>
+              <button class="button">Get Started</button>
+            </div>
+            <div>
+              <img
+                src="images/illustration-intro.svg"
+                alt="bars-ratio-percentage-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h2 class="fs-secondary-heading fw-bold">
+                What's different about Manage ?
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
+                id cupiditate itaque repellendus quisquam rem dolorum, ab
+                quaerat totam fuga veritatis a quibusdam? Eius optio excepturi
+                ipsa nulla exercitationem. Minima.
+              </p>
+            </div>
+            <div>
+              <ul class="numberd-items" role="list">
+                <li>
+                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure neque aperiam asperiores sunt debitis? Exercitationem
+                    molestiae expedita nisi ex eos illum cumque, ullam id alias
+                  </p>
+                </li>
+                <li>
+                  <h3 class="fs-600 fw-bold">Advanced build-in reports</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure neque aperiam asperiores sunt debitis? Exercitationem
+                    molestiae expedita nisi ex eos illum cumque, ullam id alias
+                  </p>
+                </li>
+                <li>
+                  <h3 class="fs-600 fw-bold">
+                    Everything you need in one place
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure neque aperiam asperiores sunt debitis? Exercitationem
+                    molestiae expedita nisi ex eos illum cumque, ullam id alias
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousal">
+        <h2 class="fs-secondary-heading">What they've said</h2>
+        <!-- Carousal Here -->
+        <button type="button" class="button">Get Started</button>
+      </section>
+
+      <section class="bg-primary-400 text-neutral-100">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <p class="fs-secondary-heading fw-bold">
+                Simplify how your team works today
+              </p>
+            </div>
+            <div>
+              <button type="button" class="button" data-type="inverted">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Here End of Main Section -->
+
+    <footer class="bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"
+              ><img src="images/logo.svg" alt="footer-Manage-Logo"
+            /></a>
+            <ul role="list" aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="pinterest" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+            </ul>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <ul aria-label="footer" role="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Cummunity</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <input type="email" />
+              <button type="button" class="button">Go</button>
+              <p>Copyright 2020. All Right Reserved</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Here End of Footer Section -->
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

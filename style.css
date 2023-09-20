@@ -90,6 +90,14 @@ body {
   line-height: 1.5;
 }
 
+p:not([class]) {
+  opacity: 0.7;
+  max-width: 35ch;
+}
+
+p[data-width="wide"] {
+  max-width: 42ch;
+}
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -116,25 +124,6 @@ svg {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-  margin-inline: auto;
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
   }
 }
 
@@ -284,6 +273,29 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+  margin-inline: auto;
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 2.75em);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .text-primary-400 {
